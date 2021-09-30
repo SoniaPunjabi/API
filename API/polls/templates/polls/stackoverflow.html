@@ -1,0 +1,11 @@
+{% block content %}
+  <h2>StackOverflow API</h2>
+  <form method="get">
+    <input type="text" name="question">
+    <button type="submit">search on Stackoverflow</button>
+  </form>
+  {% if question %}
+    <p><strong>{{ question.title }}</strong> <strong>{{ question.link }}</strong>
+    </p>
+  {% endif %}
+{% endblock %}
